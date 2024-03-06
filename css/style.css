@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    margin-bottom: 40px;
+}
+.title h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    
+}
+.title img{
+    position: absolute;
+    top: 17%;
+    left: 905px;
+}
+/* =====================================
+header start
+======================================== */
+header{
+    width: 100%;
+    background: #4b4fd1;
+}
+header .text{
+    width: 50%;
+}
+header .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 8px;
+}
+header .icon{
+    width: 50%;
+    text-align: right;
+    margin-top: 8px !important;
+}
+header .icon a{
+    margin-left: 20px;
+    color: #fff;
+    transition: .4s;
+    font-size: 20px;
+}
+header .icon a:hover{
+    color: #000;
+
+}
+/* =====================================
+header end
+======================================== */
+/* =====================================
+nav start
+======================================== */
+nav ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+    
+}
+nav ul li a{
+    color: #000 !important;
+    position: relative;
+}
+nav ul li a:hover{
+    color: #4b4fd1 !important;
+}
+nav ul li a::after{
+    width: 0px;
+    height: 1px;
+    background: #4b4fd1;
+    color: #4b4fd1;
+    position: absolute;
+    top: 80%;
+    left: 14%;
+    content: '';
+    opacity: 0;
+    transition: .4s;
+
+}
+nav ul li a:hover::after{
+    width: 30px;
+    opacity: 1;
+}
+/* =====================================
+nav end
+======================================== */
+/* =====================================
+banner start
+======================================== */
+#banner-part{
+    width: 100%;
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+#banner-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.6);
+    padding: 180px;
+}
+#banner-part .overlay .text{
+    text-align: right;
+}
+#banner-part .overlay h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner-part .overlay h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#banner-part .overlay p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 500px;
+    margin-left: auto;
+    margin-top: 20px;
+    padding-bottom: 25px;
+    line-height: 30px;
+}
+#banner-part .overlay .text a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 5px 12px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    transition: .4s;
+
+}
+#banner-part .overlay .text a:hover{
+    background: #4b4fd1;
+    border: 1px solid transparent;
+}
+/* =====================================
+banner end
+======================================== */
+/* =====================================
+about start
+======================================== */
+#about-part{
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+
+#about-part .img{
+    width: 100%;
+    height: 400px;
+}
+#about-part .text{
+    width: 100%;
+    padding-top: 50px;
+    margin-left: 20px;
+}
+#about-part .img img{
+    width: 100%;
+}
+#about-part .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 20px;
+    width: 600px;
+}
+/* =====================================
+about end
+======================================== */
+/* =====================================
+service start
+======================================== */
+#service-part{
+    width: 100%;
+    background: #fff;
+    padding-bottom: 30px;
+    position: relative;
+}
+#service-part .title img{
+    position: absolute;
+    top: 21%;
+    left: 885px;
+}
+#service-part .item{
+    margin-top: 40px;
+    padding-bottom: 10px;
+    background: #f1f1f1;
+    transition: .4s;
+}
+#service-part .item:hover{
+    -webkit-box-shadow: -1px -1px 7px 1px rgba(0,0,0,0.9); 
+box-shadow: -1px -1px 7px 1px rgba(0,0,0,0.9);
+
+}
+#service-part .item .shape{
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#service-part .item .shape .bor{
+    width: 110px;
+    height: 110px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .4s;
+}
+#service-part .item:hover .shape .bor{
+    border:2px solid #4b4fd1;
+}
+#service-part .item .shape .round{
+    width: 100px;
+    height: 100px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .4s;
+}
+#service-part .item:hover .shape .round{
+    background: #4b4fd1;
+}
+#service-part .item .shape .round .img{
+    text-align: center;
+    padding-top: 30px;
+}
+#service-part .item h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -39px;
+}
+#service-part .item p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 30px;
+}
+/* =====================================
+service end
+======================================== */
+/* =====================================
+port start
+======================================== */
+#port-part{
+    width: 100%;
+    margin-bottom: 30px;
+}
+#port-part .title{
+    position: relative;
+}
+#port-part .title img{
+    position: absolute;
+    top: 85%;
+    left: 880px;
+}
+#port-part .item img{
+    width: 100%;
+}
+#port-part .item .choto{
+    margin-bottom: 24px;
+    position: relative;
+}
+#port-part .item .boro{
+    position: relative;
+}
+#port-part .item .overlay{
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .4s;
+}
+#port-part .choto:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+#port-part .boro:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+#port-part .item .overlay a{
+    color: #fff;
+}
+#port-part .item .overlay i{
+    width: 40px;
+    height: 40px;
+    background: #4b4fd1;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 45%;
+    left: 45%;
+}
+
+/* =====================================
+port end
+======================================== */
+/* =====================================
+team start
+======================================== */
+#team-part{
+    width: 100%;
+}
+#team-part .title{
+    position: relative;
+}
+#team-part .title img {
+    position: absolute;
+    top: 84%;
+}
+#team-part .item{
+    position: relative;
+}
+#team-part .item img{
+    width: 100%;
+}
+#team-part .overlay{
+    width: 0%;
+    height: 100%;
+    background: rgba(0, 0, 0,.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: .4s;
+}
+
+#team-part .item .overlay a{
+    display: block;
+    color: #fff;
+}
+#team-part .item .overlay i{
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 31px;
+    margin-left: 32px;
+    font-size: 20px;
+    transition: .4s;
+}
+#team-part .item .overlay i:hover{
+    background: #4b4fd1;
+    border: 1px solid transparent;
+}
+#team-part .item:hover .overlay{
+    width: 40%;
+    opacity: 1;
+}
+#team-part .bto h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+#team-part .bto p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* =====================================
+team end
+======================================== */
+/* =====================================
+Testimonial start
+======================================== */
+#testi-part{
+    width: 100%;
+    margin-bottom: 50px;
+}
+#testi-part .title{
+    position: relative;
+}
+#testi-part .title img{
+    position: absolute;
+    top: 83%;
+    left: 47%;
+}
+#testi-part .testi-slider .testi{
+    margin-left: 20px;
+}
+#testi-part .testi-slider .testi .item{
+    display: flex;
+    background: #7e817a;
+    border-radius: 10px;
+}
+#testi-part .testi-slider .testi .img{
+    border-radius: 10px;
+    padding: 10px;
+}
+#testi-part .testi-slider .testi .img img{
+    border-radius: 5px;
+}
+#testi-part .testi-slider .testi .detals{
+    color: #fff;
+}
+#testi-part .testi-slider .testi .detals h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+#testi-part .testi-slider .testi .detals h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+#testi-part .testi-slider .testi .detals .rating{
+    color: #4b4fd1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#testi-part .testi-slider .testi .detals p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 365px;
+    margin-bottom: 15px;
+}
+
+/* =====================================
+Testimonial end
+======================================== */
+/* =====================================
+header start
+======================================== */
+#header-part{
+    width: 100%;
+    padding-bottom: 20px;
+    background: #3f3939;
+    color: #fff;
+}
+#header-part .item img{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#header-part p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 20px;
+    width: 218px;
+    color: #fff;
+}
+#header-part .contact{
+    position: relative;
+}
+#header-part h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#header-part .contact .icon{
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+#header-part .contact i{
+    display: block;
+    margin-top: 37px;
+    width: 40px;
+    height: 40px;
+    background: #4b4fd1;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    
+}
+#header-part .contact p{
+    display: block;
+    margin-left: 52px;
+    padding-bottom: 20px;
+}
+#header-part .list a{
+    color: #fff;
+}
+#header-part .list ul li{
+    margin-bottom: 20px;
+    margin-left: -22px;
+}
+#header-part .img img{
+    margin-left: 6px;
+    margin-top: 10px;
+}
+/* =====================================
+header end
+======================================== */
+/* =============copy start============== */
+#copy-part{
+    background: #524e4e;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
+#copy-part span{
+    color: #4b4fd1;
+}
+/* =============copy end================ */
+
+
